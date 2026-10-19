@@ -7,13 +7,15 @@
     "dev": "vite",
     "build": "rm -rf dist && vite build",
     "preview": "vite preview",
+    "test": "vitest run --root .",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint . --fix",
     "lint:check": "eslint .",
     "prettier:check": "prettier --check .",
     "prepare": "husky"
   },
   "dependencies": {
-    "@sendspin/sendspin-js": "3.0.3"
+    "@sendspin/sendspin-js": "3.2.0"
   },
   "devDependencies": {
     "@types/chromecast-caf-receiver": "^6.0.25",
@@ -27,7 +29,8 @@
     "lint-staged": "^16.4.0",
     "prettier": "3.8.1",
     "typescript": "5.9.3",
-    "vite": "^8.0.3"
+    "vite": "^8.0.3",
+    "vitest": "4.0.18"
   },
   "lint-staged": {
     "*.{js,ts,cjs,mjs}": [

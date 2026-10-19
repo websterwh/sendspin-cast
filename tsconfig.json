@@ -11,5 +11,5 @@
     "noEmit": true,
     "types": ["node", "chromecast-caf-receiver"]
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "tests/**/*.ts"]
 }
